@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Master Shifu calculator: deterministic maths for the coaching skills.
+"""Vis calculator: deterministic maths for the coaching skills.
 
 The skills must call this instead of doing arithmetic in their heads.
 Standard library only. JSON in (file path or "-" for stdin), JSON out.
 
-    python3 shifu_calc.py <command> <input.json | ->
+    python3 vis_calc.py <command> <input.json | ->
 
 Commands:
     sets      weekly sets per muscle (direct and fractional) against targets
@@ -66,7 +66,7 @@ def cmd_sets(data: dict) -> dict:
     """Input:
     {"days": [{"name": "Lower A", "exercises": [
         {"name": "Hip Thrust", "sets": 4, "primary": ["glutes"], "secondary": ["hamstrings"]}]}],
-     "targets": {"glutes": [16, 20]},             # Shifu target per muscle (optional)
+     "targets": {"glutes": [16, 20]},             # Vis target per muscle (optional)
      "isolation_only": ["biceps", "triceps"],      # Nippard: arms count direct isolation only
      "indirect_weight": 0.5}
     An exercise counts fully for each `primary` muscle and `indirect_weight` for each `secondary`.
@@ -374,7 +374,7 @@ def run(command: str, data: dict) -> dict:
     if not isinstance(data, dict):
         raise InputError("input must be a JSON object")
     out = COMMANDS[command](data)
-    out["_tool"] = {"name": "shifu_calc", "version": VERSION, "command": command}
+    out["_tool"] = {"name": "vis_calc", "version": VERSION, "command": command}
     return out
 
 
