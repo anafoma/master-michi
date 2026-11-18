@@ -1,4 +1,4 @@
-"""Unit tests for tools/vis_calc.py. Run: python3 -m unittest discover -s tests"""
+"""Unit tests for tools/michi_calc.py. Run: python3 -m unittest discover -s tests"""
 import json
 import subprocess
 import sys
@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
-import vis_calc as sc  # noqa: E402
+import michi_calc as sc  # noqa: E402
 
 
 def wk(start, end, exercises=None, sets=None, title="W"):
@@ -201,7 +201,7 @@ class TestEvidence(unittest.TestCase):
 
 class TestCli(unittest.TestCase):
     def run_cli(self, *args, stdin=None):
-        return subprocess.run([sys.executable, str(ROOT / "tools" / "vis_calc.py"), *args],
+        return subprocess.run([sys.executable, str(ROOT / "tools" / "michi_calc.py"), *args],
                               input=stdin, capture_output=True, text=True)
 
     def test_stdin_roundtrip(self):
@@ -215,8 +215,8 @@ class TestCli(unittest.TestCase):
         self.assertIn("error", json.loads(p.stdout))
 
     def test_skill_copies_match_source(self):
-        src = (ROOT / "tools" / "vis_calc.py").read_text()
-        copies = list((ROOT / "skills").glob("*/scripts/vis_calc.py"))
+        src = (ROOT / "tools" / "michi_calc.py").read_text()
+        copies = list((ROOT / "skills").glob("*/scripts/michi_calc.py"))
         self.assertTrue(copies, "run scripts/sync-knowledge.sh")
         for c in copies:
             self.assertEqual(c.read_text(), src, f"{c} is stale: run scripts/sync-knowledge.sh")

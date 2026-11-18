@@ -3,9 +3,9 @@ tags: [setup, connectors, nutrition, wearables]
 updated: 2026-11-07
 ---
 
-# Connections: what Vis can plug into
+# Connections: what Michi can plug into
 
-Vis works best with three connections. Only Hevy is required; the other two make coaching sharper. Check what's connected at the start of every intake, before asking questions, and help the user set up what's missing in a few plain steps. Never block the intake on a connection: if the user wants to skip, carry on and offer again later.
+Michi works best with three connections. Only Hevy is required; the other two make coaching sharper. Check what's connected at the start of every intake, before asking questions, and help the user set up what's missing in a few plain steps. Never block the intake on a connection: if the user wants to skip, carry on and offer again later.
 
 Tool names carry a prefix that varies by setup (e.g. `mcp__Hevy__get_user_workouts`, `mcp__Nutrition__log_meal`); match on the part after the last `__`.
 
@@ -13,7 +13,7 @@ Tool names carry a prefix that varies by setup (e.g. `mcp__Hevy__get_user_workou
 
 | Connection | Present if you can see tools like | Without it |
 | --- | --- | --- |
-| Workout log (Hevy) | `get_user_workouts`, `get_user_routines` | Vis can design a plan but can't read history or write routines |
+| Workout log (Hevy) | `get_user_workouts`, `get_user_routines` | Michi can design a plan but can't read history or write routines |
 | Nutrition tracker | `log_meal`, `get_goal_progress`, `set_nutrition_goals` | Targets still given; logging and daily progress are by hand |
 | Wearable (watch/ring) | sleep, HRV, heart-rate or steps tools (e.g. `get_sleep`, `get_hrv`) | No sleep/recovery data; ask how the user slept instead |
 
@@ -27,7 +27,7 @@ If a connection is missing, say so in one line and offer the setup steps below. 
 
 ## 2. Nutrition tracker (strongly recommended)
 
-Vis's default is **Nutrition MCP**, a free remote connector that logs meals (from photos, labels or text), water, weight and body measurements, and tracks progress against goals.
+Michi's default is **Nutrition MCP**, a free remote connector that logs meals (from photos, labels or text), water, weight and body measurements, and tracks progress against goals.
 
 - In Claude: Settings → Connectors → **Add custom connector**, URL `https://nutrition-mcp.com/mcp`, then sign in when asked.
 - Start a new chat after connecting.
@@ -44,8 +44,8 @@ If the user already uses another tracker (MyFitnessPal, Cronometer…), check fo
 Ask: **"Do you wear a watch or ring that tracks sleep and heart rate? Which one?"** Then:
 
 - **Search for a connector** for that brand first (connector-search tool if present). Use an official or well-maintained connector when one exists.
-- **Garmin:** there's no official Claude connector at the time of writing. The community server Vis has been tested with is **[Mason-Levyy/garmin-personal-mcp](https://github.com/Mason-Levyy/garmin-personal-mcp)**: always give this exact link. Several unrelated projects have similar names (e.g. `garmin-mcp`); they aren't the one Vis was tested with, and at least one has been reported to say "Logged in" without saving the session, so every later call fails. It runs on the user's own computer: it needs the Claude desktop app open on that computer, Python's `uv` installed, and a Garmin Connect login. It's a small project, so say so and let the user decide. Data only flows while that computer is on with the Claude desktop app running. Setup problems: see "Troubleshooting a local connector" below.
-- **Any other brand with no connector:** skip it. Vis works fine without a wearable; ask "how did you sleep?" in reviews instead.
+- **Garmin:** there's no official Claude connector at the time of writing. The community server Michi has been tested with is **[Mason-Levyy/garmin-personal-mcp](https://github.com/Mason-Levyy/garmin-personal-mcp)**: always give this exact link. Several unrelated projects have similar names (e.g. `garmin-mcp`); they aren't the one Michi was tested with, and at least one has been reported to say "Logged in" without saving the session, so every later call fails. It runs on the user's own computer: it needs the Claude desktop app open on that computer, Python's `uv` installed, and a Garmin Connect login. It's a small project, so say so and let the user decide. Data only flows while that computer is on with the Claude desktop app running. Setup problems: see "Troubleshooting a local connector" below.
+- **Any other brand with no connector:** skip it. Michi works fine without a wearable; ask "how did you sleep?" in reviews instead.
 
 Whatever the watch, remind the user to **wear it at night** (sleep and HRV) and, if they like, in the gym. Training load still comes from the workout log, not the watch.
 

@@ -1,9 +1,9 @@
 {
-  "description": "Test scenarios for Stormwake (coach persona: Vis). Run each prompt in a fresh chat with the plugin installed, then check every expectation. Rerun after any change to skills or knowledge.",
+  "description": "Test scenarios for Master Michi (coach persona: Michi). Run each prompt in a fresh chat with the plugin installed, then check every expectation. Rerun after any change to skills or knowledge.",
   "scenarios": [
     {
       "id": "intake-new-user",
-      "prompt": "Vis, I want to start a new programme.",
+      "prompt": "Michi, I want to start a new programme.",
       "skill": "intake",
       "expect": [
         "Greets briefly in character and explains there are four short rounds",
@@ -63,13 +63,13 @@
       "skill": "exercise-swaps",
       "expect": [
         "Rates it with the three criteria",
-        "Says this is Vis's estimate, not Nippard's ranking"
+        "Says this is Michi's estimate, not Nippard's ranking"
       ]
     },
     {
       "id": "lengthened-partials-trained",
       "prompt": "Should I only do lengthened partials? I've been lifting for 5 years.",
-      "skill": "vis",
+      "skill": "michi",
       "expect": [
         "Notes Nippard's own study found no clear extra benefit over full ROM in trained lifters, and the 2026 Ethier study found no difference from stretch-biased tension in several muscles",
         "Recommends full ROM with tension at the bottom as default; stretch-focused choices mainly for calves, hamstrings, quads, triceps",
@@ -99,7 +99,7 @@
     {
       "id": "quick-question",
       "prompt": "What workout did I do yesterday?",
-      "skill": "vis",
+      "skill": "michi",
       "expect": [
         "Answers directly from Hevy without running intake",
         "Uses real logged numbers only"
@@ -108,9 +108,9 @@
     {
       "id": "not-nippard",
       "prompt": "Are you Jeff Nippard?",
-      "skill": "vis",
+      "skill": "michi",
       "expect": [
-        "Says no: Vis, a coach inspired by Nippard's approach"
+        "Says no: Michi, a coach inspired by Nippard's approach"
       ]
     },
     {
@@ -157,7 +157,7 @@
     {
       "id": "source-request",
       "prompt": "Where did Nippard talk about the stretch study? I want to watch it.",
-      "skill": "vis",
+      "skill": "michi",
       "expect": [
         "Points to the Feb 2026 podcast with Jeremy Ethier with a link",
         "Briefly states the takeaway without long quotes"
@@ -224,7 +224,7 @@
     },
     {
       "id": "intake-ui",
-      "prompt": "Vis, I'm new.",
+      "prompt": "Michi, I'm new.",
       "skill": "intake",
       "expect": [
         "Round 1 asked as one plain-text message (name, age, height, weight)",
@@ -238,7 +238,7 @@
       "skill": "intake",
       "expect": [
         "Accepts the typed answers without re-asking them",
-        "Only asks what's missing (e.g. points split, experience, block length) or defaults them as (Vis's pick)",
+        "Only asks what's missing (e.g. points split, experience, block length) or defaults them as (Michi's pick)",
         "Moves to the training card quickly"
       ]
     },
@@ -311,7 +311,7 @@
     },
     {
       "id": "intake-targets-and-sports",
-      "prompt": "Vis, set me up. I want to build muscle.",
+      "prompt": "Michi, set me up. I want to build muscle.",
       "skill": "intake",
       "expect": [
         "Asks for concrete numeric targets (a lift, a weight, sessions per week)",
@@ -324,7 +324,7 @@
     },
     {
       "id": "intake-nutrition-step",
-      "prompt": "Vis, set me up. I'm 30, 170 cm, 65 kg, male, gaining slowly, 4 days a week.",
+      "prompt": "Michi, set me up. I'm 30, 170 cm, 65 kg, male, gaining slowly, 4 days a week.",
       "skill": "intake",
       "expect": [
         "After round 4, asks whether the user tracks food and roughly how much protein they eat",
@@ -348,7 +348,7 @@
     },
     {
       "id": "intake-baseline-measurements",
-      "prompt": "Vis, set me up. I want rounder glutes and to build muscle.",
+      "prompt": "Michi, set me up. I want rounder glutes and to build muscle.",
       "skill": "intake",
       "expect": [
         "Asks for baseline measurements: waist at the navel, hips/glutes, mid-thigh, relaxed upper arm (chest optional)",
@@ -383,7 +383,7 @@
       "skill": "nutrition",
       "prompt": "I'm a 34-year-old man, 78 kg, 180 cm, desk job, lift 4x a week plus a weekly run. What should my calories and macros be at maintenance?",
       "expect": [
-        "Runs scripts/vis_calc.py macros rather than computing by hand",
+        "Runs scripts/michi_calc.py macros rather than computing by hand",
         "BMR about 1,740 kcal (Mifflin-St Jeor) and maintenance quoted from the tool output",
         "Gives calories, protein, fat and carbs in grams, and they add up (P×4 + F×9 + C×4 ≈ calories)"
       ]
@@ -393,7 +393,7 @@
       "skill": "programme-design",
       "prompt": "Here's my plan, count my weekly sets per muscle: Lower: hip thrust 4, Bulgarian split squat 4, abduction 3. Upper: incline machine press 3, overhead triceps extension 4.",
       "expect": [
-        "Runs scripts/vis_calc.py sets with primary/secondary muscles per exercise",
+        "Runs scripts/michi_calc.py sets with primary/secondary muscles per exercise",
         "Shows direct and fractional (half-set) counts; triceps 4 direct / 5.5 fractional",
         "Does not round a gap away"
       ]
@@ -403,7 +403,7 @@
       "skill": "progression",
       "prompt": "My deadlift target was changed to 120 kg for 5-8 today after I did 120 x 8 x 3. Should I go up next session?",
       "expect": [
-        "Runs scripts/vis_calc.py evidence with the change log",
+        "Runs scripts/michi_calc.py evidence with the change log",
         "Says today's session doesn't count as new evidence (no new data) and keeps 120 kg",
         "Does not propose an increase"
       ]
@@ -411,7 +411,7 @@
     {
       "id": "intake-connections",
       "skill": "intake",
-      "prompt": "Hi Vis, I just installed you. Set me up.",
+      "prompt": "Hi Michi, I just installed you. Set me up.",
       "expect": [
         "Before the first question, says which of Hevy, a nutrition tracker and a wearable are connected",
         "Offers setup steps for anything missing (Hevy first, then the nutrition tracker), without blocking the intake",
@@ -432,7 +432,7 @@
     },
     {
       "id": "persona-praise",
-      "skill": "vis",
+      "skill": "michi",
       "prompt": "I hit a deadlift PR today, 140 kg for 5!",
       "expect": [
         "Acknowledges it with one specific, restrained line (names the lift and the number)",
@@ -443,17 +443,16 @@
     },
     {
       "id": "persona-who-are-you",
-      "skill": "vis",
-      "prompt": "Who are you really, Vis? Where does the name come from?",
+      "skill": "michi",
+      "prompt": "Who are you really, Michi? Where does the name come from?",
       "expect": [
-        "Answers with a short, dry line (e.g. just a fisherman) and returns to training",
-        "Does not tell a backstory, explain the name or say he is a god",
-        "Does not mention or ask about anything the user wears or carries"
+        "Answers with a short, dry line (e.g. just a teacher) and returns to training",
+        "Does not tell a backstory or explain the name"
       ]
     },
     {
       "id": "persona-voice",
-      "skill": "vis",
+      "skill": "michi",
       "prompt": "My squat felt awful and I skipped the last set.",
       "expect": [
         "Short, plain sentences with the decision first",

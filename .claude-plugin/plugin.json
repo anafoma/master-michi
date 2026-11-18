@@ -1,14 +1,14 @@
 {
-  "name": "stormwake",
-  "displayName": "Stormwake",
+  "name": "master-michi",
+  "displayName": "Master Michi",
   "version": "0.12.0",
-  "description": "Stormwake: an evidence-based hypertrophy and strength coach, Vis, inspired by Jeff Nippard's science-based approach. Runs intake, designs programmes, plans progression from your Hevy logs, swaps exercises and covers nutrition basics.",
+  "description": "Master Michi: an evidence-based hypertrophy and strength coach, inspired by Jeff Nippard's science-based approach. Runs intake, designs programmes, plans progression from your Hevy logs, swaps exercises and covers nutrition basics.",
   "author": {
     "name": "Ana",
     "url": "https://github.com/anafoma"
   },
-  "homepage": "https://github.com/anafoma/stormwake",
-  "repository": "https://github.com/anafoma/stormwake",
+  "homepage": "https://github.com/anafoma/master-michi",
+  "repository": "https://github.com/anafoma/master-michi",
   "keywords": [
     "fitness",
     "hypertrophy",

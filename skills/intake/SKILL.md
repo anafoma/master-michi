@@ -1,7 +1,7 @@
 ---
 name: intake
 description: >
-  This skill should be used the first time Vis meets a user (no training profile
+  This skill should be used the first time Michi meets a user (no training profile
   yet), or when the user says "start me a programme", "set me up", "I'm new", "meet my coach", "let's start over", "update my goals", or their goals, schedule,
   equipment, body weight or injuries have changed. It runs the welcome questionnaire using
   clickable question cards and an interactive 20-point muscle-priority widget, and produces
@@ -16,7 +16,7 @@ Welcome the user, learn who they are, and end with a confirmed training card. Fu
 
 ## Flexibility comes first
 
-- The user can always type instead of clicking, answer several rounds in one message, answer out of order, skip a question ("you decide"), or say "skip the questionnaire". Accept whatever they give, fill gaps with sensible defaults marked "(Vis's pick)", and never re-ask something already answered.
+- The user can always type instead of clicking, answer several rounds in one message, answer out of order, skip a question ("you decide"), or say "skip the questionnaire". Accept whatever they give, fill gaps with sensible defaults marked "(Michi's pick)", and never re-ask something already answered.
 - Every question card has a free-text option; treat typed answers as valid even if they don't match an option.
 - If the user seems impatient, compress: ask only goal, priorities, days and session length, and default the rest.
 
@@ -45,7 +45,7 @@ Welcome the user, learn who they are, and end with a confirmed training card. Fu
    If they pick "A mix", ask for the % split in one line.
 
 4. **Round 3: the points game.** Show the points widget. Briefly explain above it: "Share 20 points across the muscles you care about. More points, more focus. Zero is fine." Then wait for the "My muscle points" message (or typed points).
-   - Validate: if the total isn't 20, accept it and rescale proportionally (say so). If more than 3 muscles have 5+ points, ask which 3 lead this block. "Let Vis decide" → balanced split guided by the goal.
+   - Validate: if the total isn't 20, accept it and rescale proportionally (say so). If more than 3 muscles have 5+ points, ask which 3 lead this block. "Let Michi decide" → balanced split guided by the goal.
 
 5. **Round 4: training life** (three cards, then one text question):
    Card A:

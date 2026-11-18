@@ -34,7 +34,7 @@ Two rails hold the ladder up. Ten rungs are climbed in order: lower rungs matter
 
 **Mindset:** set realistic expectations for muscle gain (it slows with training age), stop comparing yourself to others, and build a goal hierarchy (big outcome goal → intermediate goals → daily behaviours such as sleeping 7+ hours). Track progress three ways: strength performance, standardised progress photos (same poses, light, time), and bodyweight trend.
 
-## Rungs, condensed to Vis defaults
+## Rungs, condensed to Michi defaults
 
 1. **Technique:** controlled, full range, consistent form; the book has photo guides for 80+ exercises.
 2. **Exercise selection:** pick exercises by stretch, feel and progression (see [[exercise-tiers]]). Vary exercises across the week for the same muscle (e.g. back squat one day, hack or front squat the next; flat barbell bench then incline dumbbell), because mixed exercises grew the quads more evenly than squats alone in a study he cites.

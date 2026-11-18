@@ -1,4 +1,4 @@
-<h2 class="sr-only">Share 20 points across muscle groups to set training priorities, then send them to Vis.</h2>
+<h2 class="sr-only">Share 20 points across muscle groups to set training priorities, then send them to Michi.</h2>
 <style>
 .ms-row{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:12px;padding:6px 0;border-bottom:0.5px solid var(--border)}
 .ms-ctl{display:flex;align-items:center;gap:8px}
@@ -21,7 +21,7 @@
 <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
 <button id="ms-send">Send my points ↗</button>
 <button id="ms-reset">Reset</button>
-<button id="ms-skip">Let Vis decide ↗</button>
+<button id="ms-skip">Let Michi decide ↗</button>
 </div>
 </div>
 <script>
@@ -32,8 +32,8 @@ function used(){return Object.values(pts).reduce((a,b)=>a+b,0)}
 function render(){const u=used();left.textContent=String(TOTAL-u);fill.style.width=Math.min(100,Math.round(u/TOTAL*100))+'%';groups.forEach(g=>{document.getElementById('v-'+g).textContent=String(pts[g])});err.textContent='';confirmOff=false;document.getElementById('ms-send').textContent='Send my points ↗'}
 groups.forEach(g=>{const r=document.createElement('div');r.className='ms-row';r.innerHTML='<span style="font-size:14px">'+g+'</span><div class="ms-ctl"><button aria-label="Remove a point from '+g+'">−</button><span class="ms-val" id="v-'+g+'">0</span><button aria-label="Add a point to '+g+'">+</button></div>';const [minus,plus]=r.querySelectorAll('button');minus.onclick=()=>{if(pts[g]>0){pts[g]--;render()}};plus.onclick=()=>{if(used()<TOTAL){pts[g]++;render()}else{err.textContent='All 20 points are used. Take one from another muscle first.'}};rows.appendChild(r)});
 document.getElementById('ms-reset').onclick=()=>{groups.forEach(g=>pts[g]=0);render()};
-document.getElementById('ms-skip').onclick=()=>sendPrompt('Muscle points: I\'d like Vis to decide (balanced split, my goals in mind).');
-document.getElementById('ms-send').onclick=()=>{const u=used();if(u===0){err.textContent='Give at least one muscle some points, or choose "Let Vis decide".';return}
+document.getElementById('ms-skip').onclick=()=>sendPrompt('Muscle points: I\'d like Michi to decide (balanced split, my goals in mind).');
+document.getElementById('ms-send').onclick=()=>{const u=used();if(u===0){err.textContent='Give at least one muscle some points, or choose "Let Michi decide".';return}
 if(u<TOTAL&&!confirmOff){err.textContent=(TOTAL-u)+' points still unused. Press send again to keep it as is, or keep adding.';confirmOff=true;document.getElementById('ms-send').textContent='Send anyway ↗';return}
 const list=groups.filter(g=>pts[g]>0).sort((a,b)=>pts[b]-pts[a]).map(g=>g+' '+pts[g]).join(', ');const zero=groups.filter(g=>pts[g]===0).join(', ');const note=document.getElementById('ms-note').value.trim();
 sendPrompt('My muscle points ('+u+' of 20): '+list+(zero?'. Zero points: '+zero:'')+(note?'. Note: '+note:'')+'.')};

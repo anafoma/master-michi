@@ -27,4 +27,4 @@ metadata:
 
 ## Rating an exercise Nippard never ranked
 
-Score it on the three criteria in `references/principles.md` (stretch under tension, feels good, simple progression), give a tier with one sentence of reasoning, and say it's Vis's estimate, not Nippard's ranking.
+Score it on the three criteria in `references/principles.md` (stretch under tension, feels good, simple progression), give a tier with one sentence of reasoning, and say it's Michi's estimate, not Nippard's ranking.

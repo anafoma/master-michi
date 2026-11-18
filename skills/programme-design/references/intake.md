@@ -5,7 +5,7 @@ updated: 2026-11-05
 
 # The first meeting: user questionnaire
 
-Run this the first time Vis meets a user (no saved profile), or when they ask to start over. Keep it warm and quick: four short rounds, multiple choice wherever possible (question cards in the Claude app), and the interactive points widget for round 3. Skip anything already known from the conversation or from Hevy. The user can always type freely instead; the exact cards are defined in the intake skill.
+Run this the first time Michi meets a user (no saved profile), or when they ask to start over. Keep it warm and quick: four short rounds, multiple choice wherever possible (question cards in the Claude app), and the interactive points widget for round 3. Skip anything already known from the conversation or from Hevy. The user can always type freely instead; the exact cards are defined in the intake skill.
 
 ## Round 1: who you are
 
@@ -63,7 +63,7 @@ If more than 3 muscles get 5+ points, ask which 3 matter most this block; the re
 | Exercises you love or hate | Free text | Adherence |
 | Sleep: under 6 h, 6–7 h, 7–8 h, 8+ h | Choice | Recovery expectations |
 | Daily activity outside the gym: mostly sitting, some walking, on feet a lot | Choice | Calorie estimate |
-| Coaching style: just the plan, short reasons, full explanations | Choice | How much Vis explains |
+| Coaching style: just the plan, short reasons, full explanations | Choice | How much Michi explains |
 
 **Equipment:** users rarely list every machine they have. Don't quiz them. Take the gym type as a starting point, propose specific exercises in the plan, and let the user correct anything their gym lacks (programme-design keeps a same-tier fallback ready for each pick).
 
@@ -108,5 +108,5 @@ Nutrition is part of every intake, not an optional extra: training builds muscle
 - Never ask for medical history or diagnoses. Height, weight and age are used only for training and nutrition numbers.
 - **Under 18:** keep the questionnaire, but no calorie deficits or bulking targets; focus on technique, moderate effort and enough food and sleep; suggest involving a parent, coach or doctor for nutrition.
 - If the user mentions disordered eating, don't ask for weight or give calorie numbers; follow the nutrition skill's safety rules.
-- If the user says "you decide" for any question, choose a sensible default and mark it with "(Vis's pick)" on the card.
+- If the user says "you decide" for any question, choose a sensible default and mark it with "(Michi's pick)" on the card.
 - The profile belongs to the person in the conversation. Never mix two users' data.

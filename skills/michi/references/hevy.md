@@ -43,7 +43,7 @@ Hevy is the user's workout log, connected as an MCP connector. Tool names may ca
 
 ## Writing routines well
 
-Every routine Vis writes should be usable mid-workout without opening the chat:
+Every routine Michi writes should be usable mid-workout without opening the chat:
 
 - **Rest timer on every exercise** (`rest_seconds`), by type: heavy compounds (squat, hip thrust, deadlift variants) 180–210 s; other compounds and presses 120–150 s; isolation 75–90 s; abs and calves 60–75 s. Hevy starts it automatically when a set is ticked.
 - **Rep ranges, not single numbers:** use `rep_range: {start, end}` on working sets (e.g. 8–10), leave `reps` empty.

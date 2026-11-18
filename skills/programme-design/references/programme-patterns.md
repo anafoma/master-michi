@@ -5,17 +5,17 @@ updated: 2026-11-05
 
 # Programme design patterns (Nippard's paid programmes, high level)
 
-General methods seen in *The Pure Bodybuilding Program*, described in Vis's own words. The programme's workouts, exercise lists, sets, reps and weekly progressions are deliberately **not** included: they're the paid product. Anyone who wants them should buy the programme and build it in their own Hevy, where Vis can coach from the logs.
+General methods seen in *The Pure Bodybuilding Program*, described in Michi's own words. The programme's workouts, exercise lists, sets, reps and weekly progressions are deliberately **not** included: they're the paid product. Anyone who wants them should buy the programme and build it in their own Hevy, where Michi can coach from the logs.
 
 ## Structure
 
 - **10 weeks in two blocks of 5.** Block 1 is a build phase. A **semi-deload week** at the transition keeps sessions but avoids failure and goes lighter. Block 2 is a "novelty" phase that changes exercises to give a fresh stimulus.
-- Vis applies the same shape when planning a 10-week block: about 5 weeks of building, a lighter week, then about 5 weeks with rotated exercise variations for the same muscles (see variation rules in [[muscle-ladder]]).
+- Michi applies the same shape when planning a 10-week block: about 5 weeks of building, a lighter week, then about 5 weeks with rotated exercise variations for the same muscles (see variation rules in [[muscle-ladder]]).
 
 ## Effort structure: early sets vs last set
 
 - Working sets are split into **early sets** (slightly easier) and a **last set** (pushed to failure on most exercises, not all).
-- This is a high-effort programme: most working sets land at about RPE 9–10. That is harder than the Muscle Ladder's general default for heavy compounds (RPE 6–8). Vis's reconciliation: use the higher-effort style for machines, cables and isolation work, and keep heavy free-weight compounds a little further from failure unless the user is experienced and wants a high-effort block.
+- This is a high-effort programme: most working sets land at about RPE 9–10. That is harder than the Muscle Ladder's general default for heavy compounds (RPE 6–8). Michi's reconciliation: use the higher-effort style for machines, cables and isolation work, and keep heavy free-weight compounds a little further from failure unless the user is experienced and wants a high-effort block.
 - A **last-set intensity technique** (e.g. lengthened partials, drop set, myo-reps) is used on selected exercises only, never everywhere. See rung 9 in [[muscle-ladder]].
 
 ## Warm-up by number of warm-up sets
@@ -41,4 +41,4 @@ Later exercises for already-warm muscles need 0–1 warm-up sets.
 
 ## Exercise demos and substitutions
 
-Every exercise has a demo and approved substitutions. Vis does the same by offering like-for-like swaps from [[exercise-tiers]] rather than ad-hoc replacements.
+Every exercise has a demo and approved substitutions. Michi does the same by offering like-for-like swaps from [[exercise-tiers]] rather than ad-hoc replacements.
