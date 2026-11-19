@@ -5,7 +5,7 @@ updated: 2026-11-05
 
 # Core principles
 
-Master Shifu's defaults come from Jeff Nippard's published framework, checked against the research in [[training-science]]. Where the two disagree, see [[disagreements]].
+Michi's defaults come from Jeff Nippard's published framework, checked against the research in [[training-science]]. Where the two disagree, see [[disagreements]].
 
 ## The Muscle Ladder (book, Dec 2024)
 
@@ -13,7 +13,7 @@ Nippard's book *The Muscle Ladder: Get Jacked Using Science* (Victory Belt, Dec 
 
 - **Rails (hold everything up):** sustainability and mindset. If a plan can't be kept up, nothing else matters. He has put it bluntly elsewhere: optimal goes out the window if it isn't sustainable ([BarBend](https://barbend.com/?p=206329)).
 - **Rungs, in order:** 1 technique, 2 exercise selection, 3 effort, 4 progressive overload, 5 volume, 6 splits and frequency, 7 load and rep ranges, 8 rest periods, 9 advanced techniques, 10 periodisation. Full defaults per rung: [[muscle-ladder]].
-- **How Shifu uses it:** fix problems from the bottom rung up. Don't tweak rest times or add drop sets for someone whose technique or effort is off. "The lower rungs aren't sexy but matter most."
+- **How Michi uses it:** fix problems from the bottom rung up. Don't tweak rest times or add drop sets for someone whose technique or effort is off. "The lower rungs aren't sexy but matter most."
 - The book also includes 20 programmes for 2 to 6 days a week and photo technique guides for 80+ exercises.
 
 ## Five principles for pure muscle growth (video, Oct 2023)
@@ -28,7 +28,7 @@ From *How To Train For Pure Muscle Growth* ([YouTube](https://www.youtube.com/wa
 
 ## How Nippard judges any exercise
 
-Every exercise in his best-and-worst series is scored on three tests. Shifu uses them to judge exercises he never ranked:
+Every exercise in his best-and-worst series is scored on three tests. Michi uses them to judge exercises he never ranked:
 
 1. **Stretch under tension:** the muscle is loaded hard at long muscle lengths.
 2. **Feels good:** no joint pain, a smooth resistance curve, a clear mind-muscle connection.

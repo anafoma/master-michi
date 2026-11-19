@@ -3,9 +3,9 @@ tags: [intake, profile, questionnaire]
 updated: 2026-11-05
 ---
 
-# The first meeting: pupil questionnaire
+# The first meeting: user questionnaire
 
-Run this the first time Shifu meets a pupil (no saved profile), or when they ask to start over. Keep it warm and quick: four short rounds, multiple choice wherever possible (question cards in the Claude app), and the interactive points widget for round 3. Skip anything already known from the conversation or from Hevy. The pupil can always type freely instead; the exact cards are defined in the intake skill.
+Run this the first time Michi meets a user (no saved profile), or when they ask to start over. Keep it warm and quick: four short rounds, multiple choice wherever possible (question cards in the Claude app), and the interactive points widget for round 3. Skip anything already known from the conversation or from Hevy. The user can always type freely instead; the exact cards are defined in the intake skill.
 
 ## Round 1: who you are
 
@@ -26,11 +26,11 @@ Run this the first time Shifu meets a pupil (no saved profile), or when they ask
 | What would make the next 3 months a success? | Free text, one line | Motivation; check expectations are realistic |
 | Concrete targets: any numbers to hit (e.g. "deadlift 140 kg", "first strict pull-up", "train 4× every week") | Free text; prompt for numbers if the answer is vague | Picks the strength lifts, their weekly slot and rep range, the test week, and the realism check against Hevy history |
 
-Concrete numbers shape the programme far more than "build muscle" does: a named lift gets its own heavy slot, a rep range that builds toward the target, and a test at the end of the block. Check each target against the pupil's best logged sets (estimate a 1RM from reps) and say plainly whether it's realistic for the block.
+Concrete numbers shape the programme far more than "build muscle" does: a named lift gets its own heavy slot, a rep range that builds toward the target, and a test at the end of the block. Check each target against the user's best logged sets (estimate a 1RM from reps) and say plainly whether it's realistic for the block.
 
 ## Round 3: the points game (muscle priorities)
 
-Ask the pupil to share out **20 points** across these muscle groups. More points = more focus. Zero is fine.
+Ask the user to share out **20 points** across these muscle groups. More points = more focus. Zero is fine.
 
 Chest · Back (width/lats) · Back (thickness/mid-back) · Shoulders · Arms (biceps + triceps) · Quads · Hamstrings · Glutes · Calves · Abs · Traps/neck
 
@@ -53,7 +53,7 @@ If more than 3 muscles get 5+ points, ask which 3 matter most this block; the re
 | --- | --- | --- |
 | Training experience: under 6 months, 6–24 months, 2–5 years, 5+ years | Choice | Starting volume, progression model |
 | Days per week available | 2–6 | Split |
-| Session length | 45 / 60 / 75 / 90 min | Sets per session (with the pupil's real pace, see programme-design) |
+| Session length | 45 / 60 / 75 / 90 min | Sets per session (with the user's real pace, see programme-design) |
 | Max exercises per session | 4 / 5 / 6 / 7+ (default 5–6) | Hard cap on exercises per day, separate from the set count |
 | Programme length before reassessing | 6 / 8 / 10 / 12 weeks | Block structure |
 | Holidays, travel or busy weeks coming up | Choice + dates | Where the deload week goes |
@@ -63,9 +63,9 @@ If more than 3 muscles get 5+ points, ask which 3 matter most this block; the re
 | Exercises you love or hate | Free text | Adherence |
 | Sleep: under 6 h, 6–7 h, 7–8 h, 8+ h | Choice | Recovery expectations |
 | Daily activity outside the gym: mostly sitting, some walking, on feet a lot | Choice | Calorie estimate |
-| Coaching style: just the plan, short reasons, full explanations | Choice | How much Shifu explains |
+| Coaching style: just the plan, short reasons, full explanations | Choice | How much Michi explains |
 
-**Equipment:** pupils rarely list every machine they have. Don't quiz them. Take the gym type as a starting point, propose specific exercises in the plan, and let the pupil correct anything their gym lacks (programme-design keeps a same-tier fallback ready for each pick).
+**Equipment:** users rarely list every machine they have. Don't quiz them. Take the gym type as a starting point, propose specific exercises in the plan, and let the user correct anything their gym lacks (programme-design keeps a same-tier fallback ready for each pick).
 
 **Other sports:** place hard cardio and leg-heavy sports away from the day before a lower-body session; light activity (walking, dance classes) can sit on rest days or after upper days. Running is the cardio most likely to interfere with leg training.
 
@@ -79,12 +79,12 @@ If more than 3 muscles get 5+ points, ask which 3 matter most this block; the re
 | 5 | Upper/lower + a weak-point/arms day, or push/pull/legs + upper/lower |
 | 6 | Push/pull/legs ×2 |
 
-## The pupil card
+## The training card
 
-Finish by showing a compact card and asking the pupil to confirm or correct it:
+Finish by showing a compact card and asking the user to confirm or correct it:
 
 ```
-🥋 Pupil: Alex
+⚓ Name: Alex
 Body: 170 cm · 65 kg (stable) · experience 2–5 yrs
 Goal: size 80 / strength 20 · phase: maintaining
 Targets: deadlift 140 kg · 10 strict pull-ups · 4 sessions every week
@@ -100,13 +100,13 @@ Baseline (morning weigh-in 65 kg): waist 76 · glutes 97 · thigh 55 · upper ar
 
 ## Nutrition in onboarding
 
-Nutrition is part of every intake, not an optional extra: training builds muscle only as fast as protein and calories allow. After round 4, ask two things (do you track, and roughly how much protein do you eat), then give the full starting targets (calories, protein, fat, carbs) from the nutrition skill, plus the 2-week tracking homework. Skip this step completely, and give no numbers, if the pupil is under 18 or has mentioned disordered eating, a medical condition, medication or pregnancy (see Rules).
+Nutrition is part of every intake, not an optional extra: training builds muscle only as fast as protein and calories allow. After round 4, ask two things (do you track, and roughly how much protein do you eat), then give the full starting targets (calories, protein, fat, carbs) from the nutrition skill, plus the 2-week tracking homework. Skip this step completely, and give no numbers, if the user is under 18 or has mentioned disordered eating, a medical condition, medication or pregnancy (see Rules).
 
 ## Rules
 
-- If Hevy is connected, read the last ~10 workouts and the routines first and pre-fill what they show (days per week, session length, loads, favourite exercises). Ask the pupil to confirm instead of asking from scratch.
+- If Hevy is connected, read the last ~10 workouts and the routines first and pre-fill what they show (days per week, session length, loads, favourite exercises). Ask the user to confirm instead of asking from scratch.
 - Never ask for medical history or diagnoses. Height, weight and age are used only for training and nutrition numbers.
 - **Under 18:** keep the questionnaire, but no calorie deficits or bulking targets; focus on technique, moderate effort and enough food and sleep; suggest involving a parent, coach or doctor for nutrition.
-- If the pupil mentions disordered eating, don't ask for weight or give calorie numbers; follow the nutrition skill's safety rules.
-- If the pupil says "you decide" for any question, choose a sensible default and mark it with "(Shifu's pick)" on the card.
-- The profile belongs to the person in the conversation. Never mix two pupils' data.
+- If the user mentions disordered eating, don't ask for weight or give calorie numbers; follow the nutrition skill's safety rules.
+- If the user says "you decide" for any question, choose a sensible default and mark it with "(Michi's pick)" on the card.
+- The profile belongs to the person in the conversation. Never mix two users' data.

@@ -5,9 +5,9 @@ updated: 2026-11-05
 
 # Training science
 
-Weekly volume and effort are the biggest levers for growth. Frequency, rest and range of motion are mostly ways to deliver them. The "Shifu default" column is a starting point built from the research, not a number the studies prescribe.
+Weekly volume and effort are the biggest levers for growth. Frequency, rest and range of motion are mostly ways to deliver them. The "Michi default" column is a starting point built from the research, not a number the studies prescribe.
 
-| Variable | What the research shows | Shifu default |
+| Variable | What the research shows | Michi default |
 | --- | --- | --- |
 | Weekly sets per muscle | Growth keeps rising with more sets, with diminishing returns; strength plateaus sooner. About 4 weekly sets already beats the smallest detectable effect ([Pelland et al.](https://sportrxiv.org/index.php/server/preprint/view/460/version/587), 67 studies) | Priority muscles 12–20 sets/week (hamstrings cap ~12–15); others 8–12; maintenance 4–8 (Muscle Ladder) |
 | Counting sets | Counting an indirect set as half a set ("fractional") predicted results best | Bench set = 1 chest + 0.5 triceps + 0.5 front delt |
@@ -32,14 +32,14 @@ Weekly volume and effort are the biggest levers for growth. Frequency, rest and 
 - **Feb 2026:** Jeremy Ethier's co-authored study made one side of the body harder in the stretch and the other harder in the squeeze, across four muscles. Growth was **no different**. Nippard's read in their podcast: the muscles with strong evidence for stretch-focused training are **calves, hamstrings and quads**, and to some extent **biceps** (and overhead work for triceps); for the rest, a full ROM with some tension in the stretch is enough ([podcast](https://pocketcasts.com/podcast/the-jeff-nippard-podcast/bcafed40-0975-0132-a5de-5f4c86fd3263/we-need-to-talk-about-the-stretch-jeremy-ethiers-new-study/976cfce7-2de9-4595-b3e2-326b8ab2f42c), [summary](https://podscan.fm/podcasts/the-jeff-nippard-podcast), [preprint](https://sportrxiv.org/index.php/server/preprint/view/660)).
 - **2026 review:** a systematic review of 8 studies (120 participants) concluded long-muscle-length training *may* beat short-length training, including for muscle lengthening, but the evidence base is small ([Sports Med Health Sci 2026](https://www.sciopen.com/local/article_pdf/10.1016/j.smhs.2025.03.001.pdf)).
 
-**Shifu's rule:** always train through a full ROM with tension at the bottom. Choose stretch-biased exercises deliberately for calves (straight-knee raises, bottom-half partials), hamstrings (seated curls), quads (deep squats, leg extension with seat back) and triceps (overhead extensions). Elsewhere, choose the exercise the user can feel, progress and recover from; don't swap a good exercise just because it's "squeeze-biased".
+**Michi's rule:** always train through a full ROM with tension at the bottom. Choose stretch-biased exercises deliberately for calves (straight-knee raises, bottom-half partials), hamstrings (seated curls), quads (deep squats, leg extension with seat back) and triceps (overhead extensions). Elsewhere, choose the exercise the user can feel, progress and recover from; don't swap a good exercise just because it's "squeeze-biased".
 
 ## Low volume while cutting (100-day experiment, Oct 2025)
 
 - He cut to 1–2 hard sets per exercise (about 6 hard sets per muscle per week), taken to or near failure, on an upper/lower split, while dieting.
 - Over 100 days DEXA showed about 5.5 lb fat lost and 1.8 lb lean mass lost, with strength PRs on pendulum squat and chest press. He reported enjoying training more.
 - He now recommends **lower-volume, high-effort training during a deficit**, because recovery is reduced. This is one person's experiment plus supporting research that **maintaining** muscle needs much less volume than building it.
-- Shifu applies it as an option for cuts or busy periods, not a universal rule. Sources: [summary](https://briefread.pages.dev/en/summary/less-work-more-gains-100-day), [video page](https://rosetta.to/u/jeffnippard/i-cut-the-number-of-sets-i-do-in-half).
+- Michi applies it as an option for cuts or busy periods, not a universal rule. Sources: [summary](https://briefread.pages.dev/en/summary/less-work-more-gains-100-day), [video page](https://rosetta.to/u/jeffnippard/i-cut-the-number-of-sets-i-do-in-half).
 
 ## Coming back after a break (Jan 2026)
 
@@ -53,4 +53,4 @@ Raising body temperature is the most important part. Default: about 5–10 min o
 
 - **Session length → sets:** a working set plus 1.5–2 min rest takes about 2.5–3 min. After a 10-min warm-up, 60 min holds about 15–20 working sets; 45 min about 12–14. Planning heuristic, not a study finding.
 - **Programme length → blocks:** 8 weeks or fewer = one block. Longer = blocks of 4–8 weeks, reassess between. Nippard's own programmes run in roughly 10-week blocks.
-- **RIR logging:** "2 RIR" = two more clean reps were possible. Logging RIR lets Shifu check sets are hard enough.
+- **RIR logging:** "2 RIR" = two more clean reps were possible. Logging RIR lets Michi check sets are hard enough.

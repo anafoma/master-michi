@@ -5,7 +5,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 
 declare -A MAP=(
-  [master-shifu]="principles disagreements sources hevy video-index muscle-ladder connections"
+  [michi]="principles disagreements sources hevy video-index muscle-ladder connections"
   [intake]="intake hevy connections"
   [programme-design]="principles exercise-tiers training-science goals-strength-athletic intake hevy workout-templates muscle-ladder programme-patterns"
   [specialisation]="training-science exercise-tiers workout-templates muscle-ladder programme-patterns"
@@ -23,9 +23,9 @@ for skill in "${!MAP[@]}"; do
 done
 echo "Synced knowledge into ${#MAP[@]} skills."
 
-# Deterministic calculator (tools/shifu_calc.py) for every skill that does maths.
-for skill in programme-design specialisation progression nutrition master-shifu; do
+# Deterministic calculator (tools/michi_calc.py) for every skill that does maths.
+for skill in programme-design specialisation progression nutrition michi; do
   mkdir -p "skills/$skill/scripts"
-  cp tools/shifu_calc.py "skills/$skill/scripts/shifu_calc.py"
+  cp tools/michi_calc.py "skills/$skill/scripts/michi_calc.py"
 done
-echo "Synced shifu_calc.py into 5 skills."
+echo "Synced michi_calc.py into 5 skills."

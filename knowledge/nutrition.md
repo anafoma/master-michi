@@ -18,7 +18,7 @@ Daily totals (protein, energy balance) matter far more than timing.
 ## Estimating maintenance
 
 - Quick estimate: bodyweight in **lb × 14–18** (≈ kg × 31–40); use the middle if unsure, higher for active people.
-- **Formula estimate (Shifu default when height, age and sex are known):** Mifflin-St Jeor BMR × activity factor.
+- **Formula estimate (Michi default when height, age and sex are known):** Mifflin-St Jeor BMR × activity factor.
   - BMR = 10 × kg + 6.25 × cm − 5 × age, then **+5** (male) or **−161** (female). If sex isn't given, use the midpoint (−78) and say so.
   - Activity factor: desk job + 3–4 sessions ≈ 1.45–1.55; desk job + 5–6 sessions or other sports ≈ 1.55–1.65; on feet all day + training ≈ 1.65–1.75. Count regular classes and sports (boxing, dance, running) as sessions.
   - Example: 62 kg, 168 cm, 30, female → BMR ≈ 1,359 kcal × 1.5 ≈ **2,040 kcal**. Cross-check against the kg × 31–40 range.
@@ -26,7 +26,7 @@ Daily totals (protein, energy balance) matter far more than timing.
 - Better: track intake and weight for 2 weeks and adjust until weight holds. The Muscle Ladder offers the same quick method, Mifflin-St Jeor, or guess-and-check; trend-based adjustment beats any formula.
 - Apps that adjust from the trend (he uses and recommends MacroFactor) make this automatic.
 
-## From calories to macros (Shifu default)
+## From calories to macros (Michi default)
 
 Always give the full set: calories, protein, fat and carbs, in grams per day. Build it in this order:
 
@@ -38,13 +38,13 @@ Always give the full set: calories, protein, fat and carbs, in grams per day. Bu
 How to adjust by phase:
 - **Bulk:** add the surplus mostly as carbs, a little as fat. Protein stays the same.
 - **Cut:** take the deficit mostly from carbs and some fat, never below the fat floor. Protein moves to the top of the range.
-- **Flexibility:** protein is the daily target; calories are judged on the weekly average; carbs and fat can trade places day to day as long as fat stays above the floor. Same targets on training and rest days unless the pupil wants to cycle them.
+- **Flexibility:** protein is the daily target; calories are judged on the weekly average; carbs and fat can trade places day to day as long as fat stays above the floor. Same targets on training and rest days unless the user wants to cycle them.
 
-Worked example (maintenance, 62 kg, ~2,040 kcal): protein ~110 g (440 kcal), fat ~55 g (495 kcal), carbs ~275 g (1,100 kcal). Lean bulk at ~2,180 kcal (+7%): protein 110 g, fat 55 g, carbs 310 g. (Numbers from `shifu_calc.py macros`.)
+Worked example (maintenance, 62 kg, ~2,040 kcal): protein ~110 g (440 kcal), fat ~55 g (495 kcal), carbs ~275 g (1,100 kcal). Lean bulk at ~2,180 kcal (+7%): protein 110 g, fat 55 g, carbs 310 g. (Numbers from `michi_calc.py macros`.)
 
-These macro defaults are Shifu's working rules built on the protein research above and common sports-nutrition practice; unlike protein, the exact fat and carb splits matter much less than total calories and protein.
+These macro defaults are Michi's working rules built on the protein research above and common sports-nutrition practice; unlike protein, the exact fat and carb splits matter much less than total calories and protein.
 
-## Reading progress: scale and tape together (Shifu default)
+## Reading progress: scale and tape together (Michi default)
 
 Bodyweight alone can't tell muscle from fat or water, so judge progress on weight **and** circumferences:
 
@@ -59,10 +59,10 @@ How to read them (judge over 2–4 weeks):
 | Waist steady (±1 cm), glutes/thigh/arm up, weight steady or slowly up | Muscle gain, little fat: recomposition or a good lean bulk | Keep going |
 | Waist up more than 1–2 cm with weight rising faster than the target rate | Surplus too big | Cut ~100–200 kcal/day |
 | Waist down, other sites steady, weight down | Fat loss with muscle kept | Keep going (in a cut) |
-| Everything flat for 4+ weeks while training well | Not enough stimulus or food | Check progression first, then add ~100–200 kcal/day if the pupil wants growth |
+| Everything flat for 4+ weeks while training well | Not enough stimulus or food | Check progression first, then add ~100–200 kcal/day if the user wants growth |
 | Weight up 1–2 kg in the first weeks of creatine, waist unchanged | Water stored in muscle | Ignore it |
 
-The waist is the fat check; the other sites are the muscle check. Give the pupil this rule of thumb: for a muscle-building block, the ideal is a steady waist and everything else slowly growing.
+The waist is the fat check; the other sites are the muscle check. Give the user this rule of thumb: for a muscle-building block, the ideal is a steady waist and everything else slowly growing.
 
 ## Bulking (Dec 2024 video and related)
 
@@ -107,7 +107,7 @@ Training hard and smart plus the right calories and protein are what matter; exp
 - **Fish oil** and a **multivitamin** are reasonable for general health (the multivitamin mainly when diet has gaps, e.g. some vegan diets); neither builds muscle. **Fat burners:** skip them (weak evidence, quality-control problems, side effects).
 - Nippard warns people overestimate how much muscle supplements add.
 
-## Hard limits for Shifu
+## Hard limits for Michi
 
 - Never set calorie targets below safe levels, never suggest extreme or crash diets, never give medical advice.
 - If a user mentions disordered eating, a medical condition, medication or pregnancy, stop giving numeric nutrition targets and recommend a doctor or registered dietitian.
