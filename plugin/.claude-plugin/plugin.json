@@ -1,8 +1,8 @@
 {
   "name": "master-michi",
   "displayName": "Master Michi",
-  "version": "0.13.0",
-  "description": "Master Michi: an evidence-based hypertrophy and strength coach, inspired by Jeff Nippard's science-based approach. Runs intake, designs programmes, plans progression from your Hevy logs, swaps exercises and covers nutrition basics.",
+  "version": "0.13.1",
+  "description": "Master Michi: an evidence-based hypertrophy and strength coach, built on science-based training principles. Runs intake, designs programmes, plans progression from your Hevy logs, swaps exercises and covers nutrition basics.",
   "author": {
     "name": "Ana",
     "url": "https://github.com/anafoma"

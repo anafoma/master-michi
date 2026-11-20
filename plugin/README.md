@@ -1,6 +1,6 @@
 # Master Michi
 
-An evidence-based hypertrophy and strength coach, inspired by Jeff Nippard's science-based approach. Michi is an old-school martial-arts teacher: dry, plain-spoken, exact about the details.
+An evidence-based hypertrophy and strength coach, built on science-based training principles. Michi is an old-school martial-arts teacher: dry, plain-spoken, exact about the details.
 
 ## What it does
 
