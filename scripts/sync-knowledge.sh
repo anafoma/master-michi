@@ -15,17 +15,10 @@ declare -A MAP=(
 )
 
 for skill in "${!MAP[@]}"; do
-  dest="skills/$skill/references"
+  dest="plugin/skills/$skill/references"
   rm -rf "$dest" && mkdir -p "$dest"
   for f in ${MAP[$skill]}; do
     cp "knowledge/$f.md" "$dest/$f.md"
   done
 done
 echo "Synced knowledge into ${#MAP[@]} skills."
-
-# Deterministic calculator (tools/michi_calc.py) for every skill that does maths.
-for skill in programme-design specialisation progression nutrition michi; do
-  mkdir -p "skills/$skill/scripts"
-  cp tools/michi_calc.py "skills/$skill/scripts/michi_calc.py"
-done
-echo "Synced michi_calc.py into 5 skills."

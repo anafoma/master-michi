@@ -22,11 +22,11 @@ Build a programme from a confirmed profile. If no profile exists, run `intake` f
    - If there are no points yet, ranked priorities: 12–20 sets for priorities, 8–12 for the rest.
    - Count indirect work as half a set (bench = 1 chest + 0.5 triceps + 0.5 front delt; presses also partly side delts).
    - Cap about 6–8 hard sets per muscle per session; add a day rather than more sets.
-   - **Count with the calculator, not by hand:** `scripts/michi_calc.py sets` with each exercise's sets, `primary` and `secondary` muscles, and the Michi targets. It returns direct, Nippard and fractional counts, status and gap per muscle, and flags any muscle over 8 direct sets in one session.
+   - **Count it explicitly:** tabulate each exercise's sets against its `primary` muscles (1 per set) and `secondary` muscles (0.5 per set), total per muscle, compare with the Michi targets, and flag any muscle over 8 direct sets in one session.
    - **Do the budget arithmetic up front.** Weekly set budget = days × sets per session (step 3). Add up the targets for every muscle. If the targets exceed the budget (they usually do: 11 muscle groups × 10 sets is 110+ sets a week), say so plainly before presenting and explain that the points decide who gets growth volume and who gets maintenance. A gap on a low-point muscle is then a trade-off, not a surprise.
 3. **Fit the session budget, using the user's real pace.**
    - **Pace from logs:** from the last ~10 Hevy sessions, minutes per set = session duration ÷ sets logged (skip sessions marked "forgot to stop"). Most people land at 4–4.5 min per set once warm-ups, walking between machines and set-up are included. No history → assume 4 min per set. Never assume 2.5–3 min.
-   - Run `scripts/michi_calc.py budget` with the raw Hevy workouts, the session length, the exercise cap and each day's planned sets/exercises: it returns the median pace (skipping implausible sessions), how many sets fit, and each day's expected minutes and cap check.
+   - From the raw Hevy workouts work out the median minutes per set (skip implausible sessions, such as ones left running), then how many sets fit the session length, and each day's expected minutes against the cap.
    - Working sets per session = session length ÷ pace, and say the expected duration per day when presenting.
    - **Exercise cap:** respect the user's max exercises per session (from intake; default 5–6). It's separate from the set count: 18 sets over 5 exercises feels fine, 7 exercises feels endless. When a day goes over, cut the exercise that serves the lowest-point muscle and move a set to a remaining exercise that covers it partly (e.g. drop a lat pulldown, add a set to a row).
    - If the total doesn't fit, cut sets from non-priority muscles first.

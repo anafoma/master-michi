@@ -70,3 +70,8 @@ Open a fresh chat with the plugin installed, paste each scenario's `prompt`, and
 ## License
 
 MIT. See `LICENSE`.
+
+
+## Repository layout (directory submission)
+
+The directory accepts only text and image files from unverified organisations, so the submittable plugin lives in `plugin/` (Markdown, JSON, one PNG) and nothing else is shipped. Submit the `plugin/` folder. Tooling stays outside it: `tools/michi_calc.py` is a dev-only reference calculator with tests, `scripts/` syncs `knowledge/` into `plugin/skills/*/references/` and builds the zip, and `evals/` holds scenarios. Edit `knowledge/`, then run `./scripts/sync-knowledge.sh`.

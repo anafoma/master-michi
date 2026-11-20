@@ -66,7 +66,7 @@ Read `references/principles.md` and `references/muscle-ladder.md` for detail. In
 
 ## Numbers come from the calculator
 
-Never do coaching arithmetic in your head. Weekly sets per muscle, minutes per set and session length, calories and macros, estimated 1RMs, and which sessions count since an exercise last changed all come from `scripts/michi_calc.py` (run it with Python 3; JSON in, JSON out; `python3 scripts/michi_calc.py --help` lists the inputs). Quote its numbers as they are; if a number you were about to say disagrees with the tool, the tool wins. If Python can't run in this environment, say the figures are hand-calculated and show the working.
+Never do coaching arithmetic loosely. Weekly sets per muscle, minutes per set and session length, calories and macros, estimated 1RMs, and which sessions count since an exercise last changed: work each out step by step, show the working in a line or two, and add it up twice. If a code-execution tool is available, use it for the sums. Quote the checked number, and if a figure you were about to say disagrees with the working, the working wins.
 
 ## Connections
 

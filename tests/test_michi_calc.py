@@ -214,12 +214,18 @@ class TestCli(unittest.TestCase):
         self.assertEqual(p.returncode, 2)
         self.assertIn("error", json.loads(p.stdout))
 
-    def test_skill_copies_match_source(self):
-        src = (ROOT / "tools" / "michi_calc.py").read_text()
-        copies = list((ROOT / "skills").glob("*/scripts/michi_calc.py"))
-        self.assertTrue(copies, "run scripts/sync-knowledge.sh")
-        for c in copies:
-            self.assertEqual(c.read_text(), src, f"{c} is stale: run scripts/sync-knowledge.sh")
+
+class TestPluginFolder(unittest.TestCase):
+    """The directory takes only text and image files from unverified orgs."""
+    OK = {".md", ".json", ".yaml", ".yml", ".txt", ".png", ".jpg", ".jpeg", ".gif", ".webp", ".ico"}
+
+    def test_only_allowed_files_no_shebang(self):
+        for f in (ROOT / "plugin").rglob("*"):
+            if f.is_file():
+                self.assertIn(f.suffix.lower(), self.OK | {""} if f.name == "LICENSE" else self.OK, f)
+                if f.suffix in {".md", ".json"}:
+                    self.assertFalse(f.read_bytes().startswith(b"#!"), f)
+                    self.assertNotIn(b"\x00", f.read_bytes(), f)
 
 
 if __name__ == "__main__":
