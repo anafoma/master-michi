@@ -1,3 +1,8 @@
+# Points widget
+
+Inline widget code for the muscle-priority step. Pass everything inside the code fence below, unchanged, to the inline visual tool.
+
+```html
 <h2 class="sr-only">Share 20 points across muscle groups to set training priorities, then send them to Michi.</h2>
 <style>
 .ms-row{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:12px;padding:6px 0;border-bottom:0.5px solid var(--border)}
@@ -39,3 +44,4 @@ const list=groups.filter(g=>pts[g]>0).sort((a,b)=>pts[b]-pts[a]).map(g=>g+' '+pt
 sendPrompt('My muscle points ('+u+' of 20): '+list+(zero?'. Zero points: '+zero:'')+(note?'. Note: '+note:'')+'.')};
 render();
 </script>
+```

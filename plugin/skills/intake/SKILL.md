@@ -23,7 +23,7 @@ Welcome the user, learn who they are, and end with a confirmed training card. Fu
 ## Tools
 
 - **Question cards:** use the multiple-choice question tool (e.g. `AskUserQuestion`) when it's available: up to 4 questions per card, 2–4 options each, short headers (≤12 characters). If it's not available, ask the same questions as a numbered plain-text list.
-- **Points widget:** use the inline visual tool (e.g. `show_widget`; if it requires a setup/`read_me` call first, do that silently). Read `assets/points-widget.html` and pass its contents **unchanged** as the widget code. The widget sends the result back as a chat message starting "My muscle points". If no visual tool is available, ask in text: "Share 20 points across: chest, back width, back thickness, shoulders, arms, quads, hamstrings, glutes, calves, abs, traps/neck."
+- **Points widget:** use the inline visual tool (e.g. `show_widget`; if it requires a setup/`read_me` call first, do that silently). Read `assets/points-widget.md` and pass the HTML inside its code fence **unchanged** as the widget code. The widget sends the result back as a chat message starting "My muscle points". If no visual tool is available, ask in text: "Share 20 points across: chest, back width, back thickness, shoulders, arms, quads, hamstrings, glutes, calves, abs, traps/neck."
 - **Hevy:** read before asking (`references/hevy.md`).
 - **Connections:** check which of Hevy, a nutrition tracker and a wearable are connected before the first question, and help set up what's missing (`references/connections.md`).
 

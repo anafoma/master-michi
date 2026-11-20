@@ -4,5 +4,5 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 mkdir -p dist
 rm -f dist/master-michi.plugin
-zip -rq dist/master-michi.plugin .claude-plugin skills agents README.md LICENSE -x "*.DS_Store"
+(cd plugin && zip -rq ../dist/master-michi.plugin . -x "*.DS_Store")
 echo "Built dist/master-michi.plugin"
